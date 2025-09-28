@@ -133,7 +133,7 @@
 
 .header-carousel {
     position: relative;
-    padding: 45px 0 45px 90px;
+    padding: 45px 0 45px 6vw;
 }
 
 .header-carousel::before {
@@ -171,6 +171,10 @@
 .header-carousel .owl-dot.active {
     height: 30px;
     background: var(--bs-white);
+}
+
+#affiliation {
+  font-size:80%;
 }
 
 
