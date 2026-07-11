@@ -279,36 +279,54 @@
 
 
 /*** Our Team ***/
+.team-item {
+   margin-bottom:0px;
+}
 .team-item img {
     transition: .5s;
 }
   
 .team-item:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
   
 .team-overlay {
     position: absolute;
-    padding: 30px;
+    padding-left: 20px;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    background: linear-gradient(rgba(255, 255, 255, .1) 50%, var(--bs-dark));
+    align-items: center;
+    justify-content: center;
+    background: none;
     z-index: 1;
 }
 
-.team-overlay small {
-    display: inline-block;
-    padding: 3px 15px;
-    color: var(--bs-white);
-    background: var(--bs-primary);
+div.team-overlay:hover {
+    position: absolute;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
 }
 
+.likes {
+    display: none;
+}
+
+div.team-overlay:hover div.likes {
+display:block;
+}
 
 /*** Testimonial ***/
 .testimonial-img {
